@@ -4,7 +4,7 @@ A tool to help programmers do their job :). Based
 on the classic code simulation technique.
 """
 import time
- 
+
 
 def main():
     """Runs the code simulation application"""
@@ -28,7 +28,7 @@ def _write_simulation(lines):
 
 
 def _create_header(stream, values):
-    vals = list(zip(*[(var, "-" * len(var) + ":") for var in values]))
+    vals = list(zip(*[(var, "---:") for var in values]))
     _write_line(stream, vals[0])
     _write_line(stream, vals[1])
 
