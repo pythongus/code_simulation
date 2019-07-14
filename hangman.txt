@@ -1,0 +1,11 @@
+# Hangman Game
+secret_word mask letter wrong_tries max_wrong_tries
+pear ---- None 0 5
+. ---- i 1 .
+. -e-- e 1 .
+. -e-- c 2 .
+. pe-- p 2 .
+. pe-- t 3 .
+. pea- a 3 .
+. pea- s 4 .
+. pear r 4 .
