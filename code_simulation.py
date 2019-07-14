@@ -8,9 +8,13 @@ import time
 
 def main():
     """Runs the code simulation application"""
-    while True:
-        _write_simulation(_fetch_iterations())
-        time.sleep(1)
+    try:
+        print("\n-> Start of simulation. CTRL-C to terminate.\n")
+        while True:
+            _write_simulation(_fetch_iterations())
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("\n-> End of simulation. Goodbye :)\n")
 
 
 def _fetch_iterations():
